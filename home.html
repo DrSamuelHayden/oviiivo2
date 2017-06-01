@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+
+
+  <title>Oviiivo - Watch youtube videos distraction-free</title>
+  <meta name="description" content="Oviiivo is a site which allows you to watch youtube videos without the distractions">
+  <meta name="author" content="THiNkWorks">
+  <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<script data-cfasync="false">
+  (function(r,e,E,m,b){E[r]=E[r]||{};E[r][b]=E[r][b]||function(){
+  (E[r].q=E[r].q||[]).push(arguments)};b=m.getElementsByTagName(e)[0];m=m.createElement(e);
+  m.async=1;m.src=("file:"==location.protocol?"https:":"")+"//s.reembed.com/G-AMJPgX.js";
+  b.parentNode.insertBefore(m,b)})("reEmbed","script",window,document,"api");
+</script>
+  <link rel='stylesheet prefetch' href='http://fancyapps.com/fancybox/source/jquery.fancybox.css?v=2.1.5' type="text/css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <section>
+        <div class="traka">
+	<span class="logo">
+	<img src="Picture1.png">
+	</span>
+		<form id="search-form" name="search-form" onsubmit="return search()">
+            <div class="fieldcontainer">
+                <input type="search" id="query" class="search-field" placeholder="Search...">
+                <input type="submit" name="search-btn" id="search-btn" value="&#xf002;">
+            </div>
+        </form>
+		<div id="menu">
+	<ul>	
+
+	</ul>
+</div>
+</div>
+        <div id="sve">
+		<ul id="results"></ul>
+        <div id="buttons"></div>
+    </section>
+	  <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBWiz1CgUh07AnZr6cQJvSLC0-ULYWgSBI",
+    authDomain: "oviiivo-accounts.firebaseapp.com",
+    databaseURL: "https://oviiivo-accounts.firebaseio.com",
+    projectId: "oviiivo-accounts",
+    storageBucket: "oviiivo-accounts.appspot.com",
+    messagingSenderId: "515899717923"
+  };
+  firebase.initializeApp(config);
+</script>
+	  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js' type="text/javascript"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js' type="text/javascript"></script>
+  <script src="http://vjs.zencdn.net/5.19.2/video.js"></script>
+
+    <script src="index.js" type="text/javascript"></script>
+	</div>
+	        <div class="strana">
+<ul>
+<li id="title"><strong>Menu</strong></li>
+<a href="#"><li><i class="fa fa-youtube-play"></i> What to watch</li></a>
+<a href="#"><li><i class="fa fa-user"></i> Profile</li></a>
+<a href="#"><li><i class="fa fa-clock-o"></i> Sign Out</li></a>
+<a href="#"><li><i class="fa fa-play-circle-o"></i> Watch later</li></a>
+</ul>
+<ul>
+<li id="title"><strong>Settings </strong><a href="#"><i class="fa fa-cog"></i></a></li>
+<a href="#"><li><i class="fa fa-commenting-o"></i> Feedback/Suggest</li></a>
+<a href="#"><li><i class="fa fa-indent"></i> Other Products</li></a>
+<a href="#"><li><i class="fa fa-indent"></i> Eminem</li></a>
+<a href="#"><li><i class="fa fa-info"></i> About</li></a>
+</ul>
+</div>
+</body>
+</html>
